@@ -51,6 +51,11 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
         document.documentElement.setAttribute("data-theme", theme);
     }, [theme]);
 
+    // Update HTML lang attribute when language changes
+    useEffect(() => {
+        document.documentElement.setAttribute("lang", language);
+    }, [language]);
+
     return (
         <AppContext.Provider
             value={{
