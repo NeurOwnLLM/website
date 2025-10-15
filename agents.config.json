@@ -1,0 +1,36 @@
+{
+    "nanocoder": {
+        "providers": [
+            {
+                "name": "deepseek",
+                "baseUrl": "https://api.deepseek.com/beta",
+                "apiKey": "$DEEPSEEK_KEY",
+                "models": [
+                    "deepseek-coder",
+                    "deepseek-chat",
+                    "deepseek-v3.1"
+                ]
+            },
+            {
+                "name": "GPT-4o",
+                "baseUrl": "https://api.openai.com/v1",
+                "apiKey": "$GPT4O_KEY",
+                "models": [
+                    "gpt-4o",
+                    "gpt-4o-mini",
+                    "gpt-4o-mini-2024-08-06"
+                ]
+            }
+        ],
+        "mcpServers": [
+            {
+                "name": "filesystem",
+                "command": "pnpx",
+                "args": [
+                    "@modelcontextprotocol/server-filesystem",
+                    "./"
+                ]
+            }
+        ]
+    }
+}
