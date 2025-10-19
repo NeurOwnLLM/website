@@ -8,7 +8,7 @@ export function Header() {
                 <div className={styles.branding}>
                     <img src="/logo192.png" alt="Logo" className={styles.logoImage} />
                     <a href="/" className={styles.logo}>
-                        NeurOwn
+                        neurOwn
                     </a>
                 </div>
                 <div className={styles.switchers}>

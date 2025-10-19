@@ -1,6 +1,6 @@
-# NeurOwn Website
+# neurOwn Website
 
-This is the repository for the NeurOwn startup website, built using React and Vite. We deploy
+This is the repository for the neurOwn startup website, built using React and Vite. We deploy
 this as a static site after transpiling.
 
 The project is currently WIP and under active development.
@@ -12,8 +12,8 @@ You need to have [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/) ins
 Once you have those installed, you can clone the repository and install the dependencies:
 
 ```bash
-git clone git@github.com:NeurOwnLLM/website.git neurown_website
-cd neurown_website
+git clone git@github.com:neurOwnLLM/website.git neurOwn_website
+cd neurOwn_website
 pnpm install
 ```
 To start the development server, run:

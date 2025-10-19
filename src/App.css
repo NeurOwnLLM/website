@@ -13,3 +13,13 @@
 [data-theme="dark"] {
     --primary-color: red;
 }
+
+.app {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}

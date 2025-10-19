@@ -2,7 +2,7 @@ import { useApp } from "../contexts/AppContext";
 import styles from "./hero.module.scss";
 
 export function Hero() {
-    const { language } = useApp();
+    const { l } = useApp();
 
     const c = {
         en: {
@@ -11,15 +11,15 @@ export function Hero() {
         },
         de: {
             title: "Title DE",
-            subtitle: "Own your own AI with NeurOwn",
+            subtitle: "Own your own AI with neurOwn",
         },
     };
 
     return (
         <section className={styles.hero}>
             <div className={styles.container}>
-                <h1 className={styles.title}>{c[language].title}</h1>
-                <p className={styles.subtitle}>Your AI Companion for Brain Health</p>
+                <h1 className={styles.title}>{c[l].title}</h1>
+                <p className={styles.subtitle}>{c[l].subtitle}</p>
                 <a href="#features" className={styles.ctaButton}>
                     Learn More
                 </a>

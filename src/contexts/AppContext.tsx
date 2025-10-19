@@ -12,6 +12,7 @@ export type Theme = "light" | "dark";
 
 interface AppContextType {
     language: Language;
+    l: Language;
     setLanguage: Dispatch<SetStateAction<Language>>;
     theme: Theme;
     setTheme: Dispatch<SetStateAction<Theme>>;
@@ -59,6 +60,7 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
     return (
         <AppContext.Provider
             value={{
+                l: language,
                 language,
                 setLanguage,
                 theme,
