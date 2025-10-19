@@ -1,0 +1,78 @@
+.contact {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--surface-color);
+}
+
+.contact h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--text-color);
+}
+
+.contact h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.contact p {
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.contact a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Contact info container */
+.contact > div {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .contact h2 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .contact h3 {
+        font-size: var(--font-size-lg);
+    }
+    
+    .contact p {
+        font-size: var(--font-size-base);
+    }
+    
+    .contact > div {
+        padding: var(--spacing-xl);
+        margin: 0 auto;
+        max-width: calc(100% - var(--spacing-md) * 2);
+    }
+}

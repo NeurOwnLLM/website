@@ -1,0 +1,52 @@
+.switcher {
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.switcher:hover {
+    background-color: var(--surface-color);
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+.switcher:active {
+    transform: translateY(0);
+}
+
+/* Focus styles for accessibility */
+.switcher:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Icon sizing */
+.switcher svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .switcher {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        min-width: 40px;
+        min-height: 40px;
+    }
+    
+    .switcher svg {
+        width: 16px;
+        height: 16px;
+    }
+}

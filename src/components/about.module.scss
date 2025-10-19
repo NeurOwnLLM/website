@@ -1,0 +1,197 @@
+.mission,
+.problems,
+.solutions {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--background-color);
+}
+
+.problems {
+    background-color: var(--surface-color);
+}
+
+.missionContent,
+.problemsContent,
+.solutionsContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.mission h2,
+.problems h2,
+.solutions h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--text-color);
+}
+
+.mission p {
+    font-size: var(--font-size-lg);
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+    text-align: left;
+}
+
+.problem,
+.solution {
+    background-color: var(--background-color);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.problem:hover,
+.solution:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.problem h3,
+.solution h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.problem p,
+.solution p {
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* Grid layout for problems and solutions */
+.problems,
+.solutions {
+    .problem,
+    .solution {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
+
+/* Large screen layout */
+@media (min-width: 1200px) {
+    .problemsContent,
+    .solutionsContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(auto, 1fr);
+        gap: var(--spacing-xl);
+        align-items: start;
+    }
+    
+    .problemsContent > h2 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        text-align: center;
+        font-size: var(--font-size-3xl);
+        margin-bottom: var(--spacing-md);
+        align-self: center;
+        color: var(--text-color);
+        font-weight: 700;
+    }
+    
+    .solutionsContent > h2 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        text-align: center;
+        font-size: var(--font-size-3xl);
+        margin-bottom: var(--spacing-md);
+        align-self: center;
+        color: var(--text-color);
+        font-weight: 700;
+    }
+    
+    .problem,
+    .solution {
+        margin-bottom: 0;
+    }
+    
+    /* Create overlapping staggered layout */
+    .problemsContent > :nth-child(2) {
+        grid-row: 2 / span 2;
+        grid-column: 1;
+    }
+    
+    .problemsContent > :nth-child(3) {
+        grid-row: 3 / span 2;
+        grid-column: 2;
+    }
+    
+    .problemsContent > :nth-child(4) {
+        grid-row: 4 / span 2;
+        grid-column: 1;
+    }
+    
+    .problemsContent > :nth-child(5) {
+        grid-row: 5 / span 2;
+        grid-column: 2;
+    }
+    
+    /* Solutions section - reverse the columns */
+    .solutionsContent > :nth-child(2) {
+        grid-row: 2 / span 2;
+        grid-column: 2;
+    }
+    
+    .solutionsContent > :nth-child(3) {
+        grid-row: 3 / span 2;
+        grid-column: 1;
+    }
+    
+    .solutionsContent > :nth-child(4) {
+        grid-row: 4 / span 2;
+        grid-column: 2;
+    }
+    
+    .solutionsContent > :nth-child(5) {
+        grid-row: 5 / span 2;
+        grid-column: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mission,
+    .problems,
+    .solutions {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .missionContent,
+    .problemsContent,
+    .solutionsContent {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .mission h2,
+    .problems h2,
+    .solutions h2 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .mission p {
+        font-size: var(--font-size-base);
+    }
+    
+    .problem,
+    .solution {
+        padding: var(--spacing-lg);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .problem h3,
+    .solution h3 {
+        font-size: var(--font-size-lg);
+    }
+}
