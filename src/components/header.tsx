@@ -6,7 +6,11 @@ export function Header() {
         <header className={styles.header}>
             <div className={styles.container}>
                 <div className={styles.branding}>
-                    <img src="/logo192.png" alt="Logo" className={styles.logoImage} />
+                    <img
+                        src="/logo_simple_512.webp"
+                        alt="Logo"
+                        className={styles.logoImage}
+                    />
                     <a href="/" className={styles.logo}>
                         neurOwn
                     </a>
