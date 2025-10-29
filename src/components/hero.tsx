@@ -7,11 +7,11 @@ export function Hero() {
     const c = {
         en: {
             title: "Own Your AI Infrastructure",
-            subtitle: "Take control of your data and AI capabilities with on-premises solutions designed for businesses of all sizes",
+            subtitle: "Take control of your data and AI capabilities with on-premise solutions designed for businesses of all sizes",
         },
         de: {
-            title: "Eigene KI-Infrastruktur",
-            subtitle: "Übernehmen Sie die Kontrolle über Ihre Daten und KI-Fähigkeiten mit lokalen Lösungen für Unternehmen jeder Größe",
+            title: "KI-Infrastruktur. Ohne Abhängigkeiten.",
+            subtitle: "Behalten Sie volle Kontrolle über Ihre Daten mit unseren lokalen KI-Lösungen für kleine und mittelständische Unternehmen.",
         },
     };
 
